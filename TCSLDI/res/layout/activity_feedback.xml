@@ -1,0 +1,1277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_task_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#18bd9b"
+        android:id="@+id/ll_actionbar" >
+
+        <Button
+            android:id="@+id/fb_back_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back_btn"
+            android:height="30dp"
+            android:maxHeight="30dp"
+            android:layout_marginLeft="10dp" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Feedback"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+        
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/view_task_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+    	android:paddingLeft="5dp"
+    >
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/view_task_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hr" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Speaker : "
+                    android:textColor="#18bd9b"
+                    android:textSize="20sp"
+                    android:width="90dp" />
+
+                <TextView
+                    android:id="@+id/feedback_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Session : "
+                    android:textSize="20sp"
+                    android:textColor="#18bd9b"
+                    android:width="90dp" />
+
+                <TextView
+                    android:id="@+id/feedback_session"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/donload_support"
+                android:background="@drawable/hr" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:id="@+id/panel1"
+                 android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About the program"
+                    android:padding="10dp"
+                    android:textSize="22sp"
+                    android:background="#000"
+                    android:textColor="#fff" />
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. The session met my expectations."
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q1_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q1_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q1_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q1_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q1_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. The session content was organized and easy to follow."
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q2_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q2_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q2_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q2_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q2_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. The material distributed were pertinent and useful"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q3_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q3_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q3_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q3_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q3_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. Appropriateness of the session duration"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q4_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q4_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q4_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q4_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q4_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. Quality of the course content and Design"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q5_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q5_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q5_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q5_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q5_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. I will be able to apply the knowledge learned"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q6_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q6_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q6_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q6_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q6_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+				
+				<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7. Overall I liked the session"
+                        android:textSize="22sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_q7_1"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q7_2"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q7_3"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q7_4"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q7_5"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/unselectedstar" 
+                        android:padding="5dp"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hr" />
+            </LinearLayout>
+                
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/panel2"
+                 >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About the Facilitator"
+                    android:padding="10dp"
+                    android:textSize="22sp"
+                    android:background="#000"
+                    android:textColor="#fff" />
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. Made the session interactive"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q8_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q8_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q8_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q8_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q8_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. Had adequate knowledge on the subject"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q9_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q9_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q9_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q9_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q9_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. Able to answer questions and queries effectively"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q10_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q10_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q10_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q10_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q10_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. The facilitator delivered the session effectively using right methodology"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q11_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q11_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q11_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q11_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q11_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. Time management"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q12_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q12_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q12_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q12_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q12_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. The subject content was interesting and relevant"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btn_q13_1"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q13_2"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q13_3"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q13_4"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+
+                        <Button
+                            android:id="@+id/btn_q13_5"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/unselectedstar"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hr" />
+                </LinearLayout>
+				
+				<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7. Good training aids and audio-visual aids were used"
+                        android:textSize="22sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_q14_1"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q14_2"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q14_3"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q14_4"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q14_5"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/unselectedstar" 
+                        android:padding="5dp"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hr" />
+
+				<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8. Adequate time was provides for attendee questions"
+                        android:textSize="22sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_q15_1"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q15_2"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q15_3"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q15_4"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/unselectedstar"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/btn_q15_5"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/unselectedstar" 
+                        android:padding="5dp"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hr" />
+                </LinearLayout>
+                
+                
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#555"
+                        android:padding="10dp"
+                        android:text="Something that I like in this session and can implement at my workplace"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+
+                    <EditText
+                        android:id="@+id/suggestion_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:ems="10"
+                        android:minHeight="70dp"
+                        android:gravity="top"
+                        android:padding="5dp" >
+							
+                    </EditText>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#555"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:text="Opportunity for improvement on content"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/suggestion_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:background="@drawable/border"
+                    android:layout_gravity="start"
+                    android:gravity="top"
+                    android:padding="5dp" >
+                </EditText>
+ 				<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#555"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:text="Opportunity for improvement for faculty"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/suggestion_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:background="@drawable/border"
+                    android:layout_gravity="start"
+                    android:gravity="top"
+                    android:padding="5dp" >
+                </EditText>
+				
+				<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#555"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:text="Other comments/Suggestions"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/suggestion_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="70dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:background="@drawable/border"
+                    android:layout_gravity="start"
+                    android:gravity="top"
+                    android:padding="5dp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/feedback_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:background="#18bd9b"
+                    android:textSize="22sp" />
+                
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

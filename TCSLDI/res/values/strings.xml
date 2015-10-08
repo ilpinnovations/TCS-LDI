@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TCS LDI</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="drawer_menu_list">
+        <item>My Schedule</item>
+        <item>Pending Feedbacks</item>
+        <item>Important Contacts</item>
+        <item>Places to visit</item>
+        <item>Guidelines</item>
+        <item>Log out</item>
+    </string-array>
+
+    <string name="menu_drawer_open">Open</string>
+    <string name="title_activity_view_session_deatails">Session Deatails</string>
+    <string name="title_activity_splash">Leadership Development</string>
+    <string name="title_activity_login">Login</string>
+
+    <string-array name="location">
+        <item>Trivandrum</item>
+        <item>Hydrabad</item>
+        <item>Chennai</item>
+    </string-array>
+
+    <string name="server">http://40117f74.ngrok.io/sch/</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+
+</resources>

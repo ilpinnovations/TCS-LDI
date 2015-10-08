@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_task_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#18bd9b"
+        android:id="@+id/ll_actionbar" >
+
+        <Button
+            android:id="@+id/tv_back_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back_btn"
+            android:height="30dp"
+            android:maxHeight="30dp"
+            android:layout_marginLeft="10dp" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="Session Details"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+        
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/view_task_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5dp"
+    	android:paddingLeft="5dp"
+    >
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/view_task_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hr" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Title : "
+                    android:textColor="#18bd9b"
+                    android:textSize="20sp"
+                    android:width="90dp" />
+
+                <TextView
+                    android:id="@+id/view_deatils_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Date : "
+                    android:textSize="20sp"
+                    android:textColor="#18bd9b"
+                    android:width="90dp" />
+
+                <TextView
+                    android:id="@+id/view_deatils_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Time : "
+                    android:textColor="#18bd9b"
+                    android:width="90dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/view_deatils_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Venue : "
+                    android:textColor="#18bd9b"
+                    android:width="90dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/view_deatils_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Speaker : "
+                    android:textColor="#18bd9b"
+                    android:width="90dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/view_deatils_speaker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Details : "
+                    android:textColor="#18bd9b"
+                    android:width="90dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/view_deatils_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hr" />
+
+            <Button
+                android:id="@+id/view_session_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="#18bd9b"
+                android:padding="10dp"
+                android:text="Dowload Attachment"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/donload_support"
+                android:background="@drawable/hr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Pesonal Note : "
+                android:textColor="#18bd9b"
+                android:width="150dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/tv_personal_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:id="@+id/view_task_note"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+
+            <Button
+                android:id="@+id/view_task_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#18bd9b"
+                android:padding="10dp"
+                android:text="Add to Calendar"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hr" />
+
+            
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
